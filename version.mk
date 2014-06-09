@@ -1,0 +1,6 @@
+ROLLNAME	= ergatis
+VERSION		= 5.4.0
+RELEASE		= 0
+COLOR		= indigo
+
+REDHAT.ROOT	= $(CURDIR)
