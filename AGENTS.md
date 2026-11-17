@@ -3,7 +3,7 @@
 <!-- push-mirror-notice:start (IT, checked 2026-11-17T04:42Z) -->
 > **NB: READ THIS BEFORE YOU CLONE, COMMIT OR PUSH**
 >
-> **This repository has a push-mirror entry in Gitea that pushes it to GitHub. Push code to the authoritative repo. While that mirror is running, pushes go to the Gitea repo: a mirror sync makes GitHub match Gitea, so a commit pushed only to GitHub is overwritten.**
+> **This repository has a push-mirror entry in Gitea that pushes it to GitHub. Push code to the authoritative repo. While that mirror is running, pushes go to the Gitea repo: a mirror sync makes GitHub match Gitea, so a commit pushed only to GitHub is overwritten, and a branch that exists only on GitHub is removed.**
 >
 > | | |
 > |---|---|
