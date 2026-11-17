@@ -1,27 +1,26 @@
 # AGENTS.md
 
-<!-- push-mirror-notice:start (IT, 2026-11-17) -->
+<!-- push-mirror-notice:start (IT, checked 2026-11-17T04:04Z) -->
 > **NB: READ THIS BEFORE YOU CLONE, COMMIT OR PUSH**
 >
-> **This repository is push-mirrored from Gitea to GitHub. Gitea is the authoritative repo. GitHub is a copy.**
+> **This repository has a push-mirror entry in Gitea that pushes it to GitHub. Push code to the authoritative repo. While that mirror is running, pushes go to the Gitea repo: a mirror sync makes GitHub match Gitea, so a commit pushed only to GitHub is overwritten.**
 >
 > | | |
 > |---|---|
-> | Authoritative repo (work here) | https://gitea.gnomatix.com/bitb-brett-personal/ergatis-on-rocks |
-> | Push mirror (a copy; never work here) | https://github.com/brettwhitty/ergatis-on-rocks |
-> | Mirror state when this notice was written | In step on 2026-11-17 (UTC): both at `a9cd128173` on `master`. |
+> | Gitea repo (the mirror pushes from here) | https://gitea.gnomatix.com/bitb-brett-personal/ergatis-on-rocks |
+> | GitHub repo (the mirror pushes to here) | https://github.com/brettwhitty/ergatis-on-rocks |
+> | Push mirror setting in Gitea | An entry from Gitea to GitHub exists: timed sync every 8h0m0s, sync on commit is off, last ran 2026-11-16T22:26:44Z, no error recorded. |
+> | Branch `master` on the two sides | Both sides are at `a9cd128173`. |
 >
-> **If you got this file from GitHub, you are not on the authoritative repo.** Stop and switch to the Gitea repo before you do anything else.
->
-> The mirror state above was true on the date shown. It may not be true now. If mirroring has been switched off, this notice is still here, and Gitea has commits that GitHub does not. So you have to check. Before you clone or push:
+> These facts were read from the live repos at 2026-11-17T04:04Z. They may not be true now. A mirror can be switched off and this notice will still be here. Check them yourself before you clone or push:
 >
 > 1. Have the GNOMATIX OSS skills installed, including `staleness-guard` (`/plugin install staleness-guard@gnomatix-oss-skills`).
-> 2. Run `staleness-guard` on this claim: "this repo is currently push-mirrored from Gitea to GitHub, and the two are in step." Check it against the live repos, not this file:
+> 2. Run `staleness-guard` on the table above, against the live repos, not this file:
 >    - `git ls-remote https://gitea.gnomatix.com/bitb-brett-personal/ergatis-on-rocks.git refs/heads/master`
 >    - `git ls-remote https://github.com/brettwhitty/ergatis-on-rocks.git refs/heads/master`
->    - the push-mirror setting in Gitea: `GET https://gitea.gnomatix.com/api/v1/repos/bitb-brett-personal/ergatis-on-rocks/push_mirrors`
-> 3. Clone from, commit to and push to the Gitea repo only. Never push to GitHub. Gitea does that.
-> 4. No Gitea access? Ask IT (it@gnomatix.com). Do not use the owner's GitHub credentials, and do not work from GitHub instead.
->
-> **Already worked from the GitHub copy?** Bring that work to the Gitea repo on a branch. Delete nothing on either side, so that nothing is lost, and tell IT what you moved.
+>    - `GET https://gitea.gnomatix.com/api/v1/repos/bitb-brett-personal/ergatis-on-rocks/push_mirrors`
+> 3. If the mirror is running and the two sides match, clone from, commit to and push to the Gitea repo only. Never push to GitHub. Gitea does that.
+> 4. If the two sides do not match, or the mirror is not running, stop. Do not push to either side until the repo's owner has said which one takes the work.
+> 5. No Gitea access? Ask IT (it@gnomatix.com). Do not use the owner's GitHub credentials, and do not work from GitHub instead.
+> 6. Already worked from a GitHub clone? Keep that work, delete nothing on either side, and tell IT the repo, branch and commit.
 <!-- push-mirror-notice:end -->
